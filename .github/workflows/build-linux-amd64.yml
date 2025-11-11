@@ -8,7 +8,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-22.04   # ✅ مشخصاً 22.04
+    runs-on: ubuntu-22.04
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
@@ -26,7 +26,8 @@ jobs:
             libssl-dev \
             libreadline-dev \
             libsqlite3-dev \
-            libmicrohttpd-dev
+            libmicrohttpd-dev \
+            gperf
 
       - name: Configure
         run: |
